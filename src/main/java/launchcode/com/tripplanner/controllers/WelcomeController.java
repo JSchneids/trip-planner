@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class WelcomeController {
 
         @RequestMapping(value = "")
-        public String Welcome() {
+        public String welcome() {
             return "Welcome";
         }
 }

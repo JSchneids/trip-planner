@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class UserHomePage {
 
     @RequestMapping(value = "userhomepage")
-    public String UserHomePage() {
+    public String userhomepage() {
             return "UserHomePage";
     }
 }

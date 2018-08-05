@@ -9,9 +9,14 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 public class WelcomeController {
 
-        @RequestMapping(value = "")
-        public String index(Model model) {
-            model.addAttribute("title","Welcome to Trip Planner");
-            return "index";
-        }
+    @RequestMapping(value = "")
+    public String index(Model model) {
+        model.addAttribute("title","Welcome to Trip Planner");
+        return "index";
+    }
+    @RequestMapping(value = "login")
+    public String login(Model model) {
+        model.addAttribute("title","Please Login");
+        return "entry/login";
+    }
 }
